@@ -124,7 +124,26 @@
     </div>
 
     <div id="contact" class="contact">
+        <div>
+            <h1>Contact</h1>
+            <p>Send us an email at polyscopeLabs@hotmail.com</p>
+            <p>Or call us at our toll free line 1-800-123-4567</p>
+            <p>We will try and get back to you as soon as possible about
+                any questions of concerns you might have!
+            </p>
+        </div>
+        <form class="messageForm">
 
+            <label for="email" class="emailLabel">Email:</label>
+            <input type="text" id="email" class="emailText" name="email" required>
+
+            <label for="message" id="messageLabel" class="messageLabel">Please send us a message with any questions or
+                concerns you may
+                have.</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button id="messageButton" onclick="submitMessage()">Send</button>
+        </form>
     </div>
 </body>
 <footer>
@@ -133,7 +152,7 @@
         <li><a href="#about-container">About</a></li>
         <li><a href="#products-container">Products</a></li>
         <li><a href="#testing">Testing</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="#contact">Contact us</a></li>
         <li><a href="/login.html">Login</a></li>
         <li><a href="#">Register</a></li>
     </ul>

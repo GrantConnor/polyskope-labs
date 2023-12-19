@@ -25,8 +25,8 @@
         </ul>
     </header>
 
-    <main>
-        <h1>Please log in to your account</h1>
+    <div class="register">
+        <h1>Please register an account</h1>
         <img src="/Lock.png" class="lock">
         <form action="#" method="post" class="Login-form">
             <label for="username">Username/Email:</label>
@@ -35,13 +35,16 @@
             <label for="password">Password:</label>
             <input type="text" id="password" name="password" required>
 
-            <button type="submit">Log in</button>
+            <label for="password2">Retype Password:</label>
+            <input type="text" id="password2" name="password2" required>
 
-            <h1>Don't have an account?</h1>
+            <button type="submit2">Register</button>
+
+            <h1>Already have an account?</h1>
 
         </form>
-        <button class="registerButton" onclick="location.href = 'register.html'">Click here to Register</button>
-    </main>
+        <button class="registerButton" onclick="location.href = 'login.html'">Click here to Log in</button>
+    </div>
 </body>
 
 </html>

@@ -24,3 +24,11 @@ function submitForm() {
       alert("Thank you for signing up! We will message you shortly.");
     }
 }
+
+function submitMessage() {
+  var form = document.getElementById("messageForm");
+  form.style.display = 'none';
+
+  var message = document.getElementById("messageLabel");
+  message.textContent = "Thank you! We will try and get back to you as soon as possible!"
+}
