@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polyskope Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-oCEsdZ63m2yK6t6v5nIbDQLJgsG5CnfdyjsMGQ93mbz9nROiNoKnI+9EYa85IhIX" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <script src="/scripts.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a href="/index.html">
+            <img src="/Polyscope logo.png" class="logo">
+        </a>
+        <ul>
+            <li><a href="#home-section">Home</a></li>
+            <li><a href="#about-container">About</a></li>
+            <li><a href="#products-container">Products</a></li>
+            <li><a href="#testing">Testing</a></li>
+            <li><a href="#contact">Contact us</a></li>
+            <li><a href="/login.html">Login</a></li>
+            <li><a href="#">Register</a></li>
+        </ul>
+    </header>
+
+    <main id="home-section">
+        <h1>Welcome to Polyskope Labs</h1>
+        <div class="background-container">
+        </div>
+        <form id="search-bar">
+            <input type="text" id="search" name="search" placeholder="Search...">
+            <input type="submit" value="Search">
+        </form>
+    </main>
+
+    <div id="about-container">
+        <div class="about">
+            <h1>About us</h1>
+            <h2>Welcome to Polyskope Labs, a leading innovator in cutting-edge research and development. At Polyskope,
+                we
+                are dedicated to pushing the boundaries of science and technology, exploring new frontiers, and making
+                breakthroughs that shape the future.
+
+                Our passionate team of scientists, engineers, and researchers work tirelessly to uncover the mysteries
+                of
+                the universe and develop solutions to some of the world's most pressing challenges. We specialize in a
+                wide
+                range of fields, from advanced materials science to artificial intelligence, and we're committed to
+                making a
+                positive impact on society.
+
+                With a commitment to excellence and a relentless pursuit of knowledge, Polyskope Labs strives to create
+                a
+                better tomorrow. We're proud to be at the forefront of innovation and invite you to join us on this
+                exciting
+                journey of discovery.
+
+                Thank you for visiting Polyskope Labs, where the pursuit of knowledge knows no bounds.</h2>
+        </div>
+        <div class="border-container" id="border-container1"></div>
+    </div>
+
+
+    <div id="products-container">
+        <h1>Select from our patented products</h1>
+        <div class="love-potion">
+            <div class="info-container">
+                <h2>The Oxytocin Serum</h2>
+                <p>The Oxytocin Serum was made to change pheromone levels to replicate the feeling of love.</p>
+                <p>$199.99</p>
+            </div>
+            <img src="/love potion.png" class="love-potion-img">
+        </div>
+
+        <div class="speed-enhancer">
+            <div class="info-container">
+                <h2>Compound V</h2>
+                <p>This caffein boosted drink will make you run a lot quicker!</p>
+                <p>$59.99</p>
+            </div>
+            <img src="/speed enhancer.png" class="speed-potion-img">
+        </div>
+
+        <div class="border-container"></div>
+    </div>
+
+    <div class="testing" id="testing">
+        <h1>Please fill out this form if you're interested in testing.</h1>
+        <form action="#" method="post" class="testing-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="height">Height (ft/in):</label>
+            <input type="" id="height" name="height" required>
+
+            <label for="weight">Weight (lbs):</label>
+            <input type="number" id="weight" name="weight" required>
+
+            <label for="allergies">Allergies (if any):</label>
+            <textarea id="allergies" name="allergies" rows="4"></textarea>
+
+            <div class="checkbox-title">
+                <label for="request">Agree to receive emails from Polyscope Labs?</label>
+                <input type="checkbox" id="requestCheckbox" name="requestCheckbox" value="requestCheckbox">
+            </div>
+
+            <button type="submit" onclick="submitForm()">Sign Up</button>
+        </form>
+
+    </div>
+
+    <div id="contact" class="contact">
+
+    </div>
+</body>
+<footer>
+    <ul>
+        <li><a href="#home-section">Home</a></li>
+        <li><a href="#about-container">About</a></li>
+        <li><a href="#products-container">Products</a></li>
+        <li><a href="#testing">Testing</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="/login.html">Login</a></li>
+        <li><a href="#">Register</a></li>
+    </ul>
+</footer>
+
+</html>

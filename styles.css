@@ -1,0 +1,338 @@
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background: aliceblue;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    padding: 10px;
+    background-color: aliceblue;
+    border-bottom: 1px solid black;
+}
+
+img {
+    scale: 0.5;
+    transform: translateY(-215px);
+}
+
+header ul,
+header ul li a {
+    margin: auto;
+    color: rgb(96, 98, 99);
+    display: flex;
+    text-decoration: none;
+}
+
+header ul {
+    margin-right: 300px;
+}
+
+header ul li {
+    margin-right: 40px;
+    font-family: 'DM Serif Display';
+    font-size: 1.2em;
+}
+
+header ul li:nth-of-type(5) {
+    margin-right: 200px;
+}
+
+header ul li:nth-of-type(6) {
+    margin-left: 100px;
+}
+
+header ul li:hover {
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(/MainBack.jpg);
+    background-position-x: center;
+    filter: brightness(0.65);
+}
+
+main h1 {
+    position: absolute;
+    font-size: 3em;
+    color: aliceblue;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    z-index: 100;
+}
+
+#search-bar {
+    position: absolute;
+    z-index: 99;
+    margin-top: 120px;
+}
+
+input[type="submit"] {
+    background-color: #010f50;
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 12px;
+    margin-left: 5px;
+    transition: transform 200ms;
+}
+
+input[type="submit"]:hover {
+    background-color: #58b1cc; 
+    transform: scale(1.1);
+}
+
+input[type="text"] {
+    outline: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    height: 32px; 
+}
+
+
+#about-container {
+    flex-direction: column;
+    display: flex;
+    height: 800px;
+    width: 100%;
+}
+.about {
+    margin-top: 150px;
+    padding-bottom: 100px;
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    color: rgb(96, 98, 99);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.about h1 {
+    margin-top: 80px;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.about h2 {
+    width: 650px;
+    text-align: center;
+    word-spacing: 2px;
+    line-height: 1.4;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+#products-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+    width: 100%;
+    height: 100vh;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(96, 98, 99);
+}
+
+.border-container{
+    margin-top: 20px;
+    width: 85%;
+    opacity: 60%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+#border-container1 {
+    margin-left: 150px;
+}
+
+#products-container > h1 {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.info-container p{
+    width: 400px;
+}
+
+.love-potion {
+    width: 950px;
+    height: 250px;
+    margin-top: 100px;
+    margin-right: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.love-potion-img {
+    margin-top: 200px;
+    width: 500px;
+    height: 500px;
+}
+
+.speed-potion-img {
+    width: 500px;
+    height: 500px;
+    margin-top: 220px;
+}
+
+.speed-enhancer {
+    width: 950px;
+    height: 250px;
+    margin-top: 100px;
+    margin-left: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(8, 54, 56);
+    margin-top: 100px;
+    display: flex;
+}
+
+footer ul {
+    display: flex;
+    width: 100%;
+}
+
+footer ul li:nth-of-type(1),
+footer ul li:nth-of-type(2),
+footer ul li:nth-of-type(3),
+footer ul li:nth-of-type(4),
+footer ul li:nth-of-type(5) {
+    margin: auto;
+    
+}
+
+footer ul li:nth-of-type(6) {
+    margin-left: 120px;
+    margin-top: 30px;
+}
+
+footer ul li:nth-of-type(7) {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.testing {
+    padding-top: 120px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.testing h1 {
+    color: rgb(96, 98, 99);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.testing-form {
+    width:600px;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .testing-from label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .testing-form input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .testing-form button {
+    margin-top: 100px;
+    background-color: rgb(8, 54, 56);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .testing-form button:hover {
+    background-color: rgb(26, 114, 119);
+  }
+
+.checkbox-title {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+  }
+
+input[type="checkbox"] {
+    width: 13px;
+    height: 13px;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+
+
+
+
